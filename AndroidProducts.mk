@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_nx659j.mk
+    $(LOCAL_DIR)/lmodroid_nx659j.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_nx659j-eng \
-    lineage_nx659j-user \
-    lineage_nx659j-userdebug
+    lmodroid_nx659j-eng \
+    lmodroid_nx659j-user \
+    lmodroid_nx659j-userdebug

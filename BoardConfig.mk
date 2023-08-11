@@ -119,7 +119,7 @@ TARGET_BOARD_PLATFORM := kona
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/lmodroid/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 
@@ -169,7 +169,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Partitions - reserved size
 ifneq ($(WITH_GMS),true)
-BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 1000000000
+BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 815142400
 BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 100000000
 BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 100000000
 else
