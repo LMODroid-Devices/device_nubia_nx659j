@@ -110,7 +110,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.bluetooth.a2dp_offload.disabled=false \
-    persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxadaptive-aptxhd-ldac \
+    persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxadaptive-aptxhd \
     persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true \
     persist.vendor.service.bdroid.fwsnoop=true \
     ro.bluetooth.a2dp_offload.supported=true \
@@ -166,7 +166,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.demo.hdmirotationlock=false \
     persist.sys.sf.color_mode=0 \
     persist.sys.sf.color_saturation=1.0 \
-    persist.sys.sf.native_mode=257 \
+    persist.sys.sf.native_mode=0 \
     ro.hardware.egl=adreno \
     ro.hardware.vulkan=adreno \
     ro.opengles.version=196610 \
@@ -184,6 +184,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # DPM
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.dpm.feature=9
+
+# FRP
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # fwk-detect
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
@@ -208,8 +212,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.factory.nfc=true \
-    ro.boot.product.hardware.sku=nfc
+    persist.vendor.factory.nfc=true
 
 # OEM unlocking
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
