@@ -70,9 +70,6 @@ endif
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := kona
 
-# DT2W
-TARGET_TAP_TO_WAKE_NODE := "/sys/kernel/tp_node/wake_gesture"
-
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
@@ -116,7 +113,7 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_SECOND_OFFSET := 0x00f00000
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_KERNEL_SOURCE := kernel/nubia/sm8250
-TARGET_KERNEL_CONFIG := vendor/kona-perf_defconfig vendor/nx659j.config vendor/debugfs.config
+TARGET_KERNEL_CONFIG := vendor/kona-perf_defconfig vendor/nx659j.config
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
@@ -170,6 +167,7 @@ TARGET_SCREEN_DENSITY := 420
 VENDOR_SECURITY_PATCH := 2022-08-01
 
 # Sepolicy
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private

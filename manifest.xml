@@ -1,5 +1,4 @@
 <manifest version="2.0" type="device" target-level="6">
-    <kernel target-level="5" />
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
@@ -63,11 +62,6 @@
         <name>android.hardware.tetheroffload.control</name>
         <transport>hwbinder</transport>
         <fqname>@1.1::IOffloadControl/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.vibrator</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IVibrator/default</fqname>
     </hal>
     <hal format="hidl">
         <name>com.dsi.ant</name>
@@ -195,11 +189,6 @@
         <name>vendor.qti.hardware.iop</name>
         <transport>hwbinder</transport>
         <fqname>@2.0::IIop/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.perf</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.2::IPerf/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.qccvndhal</name>
