@@ -20,7 +20,7 @@ TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lmodroid/config/common_full_phone.mk)
 
 # Inherit from nx659j device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,7 +28,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := nubia
 PRODUCT_DEVICE := nx659j
 PRODUCT_MANUFACTURER := nubia
-PRODUCT_NAME := lineage_nx659j
+PRODUCT_NAME := lmodroid_nx659j
 PRODUCT_MODEL := NX659J
 
 TARGET_VENDOR_PRODUCT_NAME := NX659J
